@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingsBinder.Generator", "SettingsBinder\SettingsBinder.Generator\SettingsBinder.Generator.csproj", "{E59C121A-FFC6-4611-A568-C0A5724BC10F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingsBinder.Tests", "SettingsBinder\SettingsBinder.Tests\SettingsBinder.Tests.csproj", "{555A17A4-01AF-4AAE-8BAB-94109E02CC17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingsBinder.SampleApi", "SettingsBinder\SettingsBinder.SampleApi\SettingsBinder.SampleApi.csproj", "{7C7A51A3-399F-460E-8439-E835E6F1D6AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E59C121A-FFC6-4611-A568-C0A5724BC10F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59C121A-FFC6-4611-A568-C0A5724BC10F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59C121A-FFC6-4611-A568-C0A5724BC10F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59C121A-FFC6-4611-A568-C0A5724BC10F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555A17A4-01AF-4AAE-8BAB-94109E02CC17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555A17A4-01AF-4AAE-8BAB-94109E02CC17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555A17A4-01AF-4AAE-8BAB-94109E02CC17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555A17A4-01AF-4AAE-8BAB-94109E02CC17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C7A51A3-399F-460E-8439-E835E6F1D6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C7A51A3-399F-460E-8439-E835E6F1D6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C7A51A3-399F-460E-8439-E835E6F1D6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C7A51A3-399F-460E-8439-E835E6F1D6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

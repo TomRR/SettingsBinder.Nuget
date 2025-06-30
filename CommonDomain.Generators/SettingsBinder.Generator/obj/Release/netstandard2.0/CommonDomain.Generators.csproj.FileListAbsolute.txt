@@ -1,0 +1,11 @@
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/bin/Release/netstandard2.0/CommonDomain.Generators.deps.json
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/bin/Release/netstandard2.0/CommonDomain.Generators.dll
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/bin/Release/netstandard2.0/CommonDomain.Generators.pdb
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.csproj.AssemblyReference.cache
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.AssemblyInfoInputs.cache
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.AssemblyInfo.cs
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.csproj.CoreCompileInputs.cache
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.sourcelink.json
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.dll
+/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Generators/obj/Release/netstandard2.0/CommonDomain.Generators.pdb

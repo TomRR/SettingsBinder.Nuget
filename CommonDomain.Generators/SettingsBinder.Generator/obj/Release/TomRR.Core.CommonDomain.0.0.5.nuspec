@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>TomRR.Core.CommonDomain</id>
+    <version>0.0.5</version>
+    <authors>Tom - Robert Resing</authors>
+    <description>Id Generation: Autogenerate Ids for Entries and AggreggatRoots via Attribute
+            Generation Base classes: Autogenerate Bases for AggreggatRoots, Entries and ValueObjects via Attribute</description>
+    <tags>CommonDomain, TomRR</tags>
+    <repository type="git" commit="c99113a4efc8409c696fbcfccff0c9b4ec91a231" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.CodeAnalysis.CSharp" version="4.3.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.CodeAnalysis.CSharp.Workspaces" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Core/bin/Release/netstandard2.0/CommonDomain.Core.dll" target="lib/netstandard2.0/CommonDomain.Core.dll" />
+    <file src="/Users/tom/Developer/MyNuget/CommonDomain.Nuget/CommonDomain.Generators/CommonDomain.Core/bin/Release/netstandard2.0/CommonDomain.Core.dll" target="analyzers/dotnet/cs/CommonDomain.Core.dll" />
+  </files>
+</package>

@@ -1,1 +1,1 @@
-# SettingsBinder.Nuget
+# CommonDomain.Nuget

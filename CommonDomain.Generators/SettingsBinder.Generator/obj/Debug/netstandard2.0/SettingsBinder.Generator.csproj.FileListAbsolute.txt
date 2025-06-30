@@ -1,0 +1,11 @@
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/bin/Debug/netstandard2.0/SettingsBinder.Generator.deps.json
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/bin/Debug/netstandard2.0/SettingsBinder.Generator.dll
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/bin/Debug/netstandard2.0/SettingsBinder.Generator.pdb
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.csproj.AssemblyReference.cache
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.AssemblyInfoInputs.cache
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.AssemblyInfo.cs
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.csproj.CoreCompileInputs.cache
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.sourcelink.json
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.dll
+/Users/tom/Developer/MyNuget/SettingsBinder.Nuget/CommonDomain.Generators/SettingsBinder.Generator/obj/Debug/netstandard2.0/SettingsBinder.Generator.pdb

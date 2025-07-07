@@ -18,7 +18,7 @@
             - Supports custom section names via attribute constructor
             - Includes extension methods for configuration and DI registration
             
-            - Current version **only** for web api projects
+            - Current version only for web api projects
         </PackageReleaseNotes>
         
         <Authors>Tom-Robert Resing</Authors>

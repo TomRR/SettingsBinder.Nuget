@@ -11,8 +11,11 @@
 
         <RootNamespace>TomRR.SourceGenerator.SettingsBinder</RootNamespace>
         <AssemblyName>TomRR.SourceGenerator.SettingsBinder</AssemblyName>
-        <Version>0.0.1</Version>
+        <Version>0.0.2</Version>
         <PackageReleaseNotes>
+            0.0.2: bug fix
+            - Fixed missing 'this' keyword on extension method AddConfigurationSources
+
             0.0.1: Initial Testing Version
             - Generates strongly-typed settings binders for [Settings]-marked classes
             - Supports custom section names via attribute constructor

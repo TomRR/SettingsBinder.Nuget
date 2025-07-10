@@ -11,9 +11,9 @@
 
         <RootNamespace>TomRR.SourceGenerator.SettingsBinder</RootNamespace>
         <AssemblyName>TomRR.SourceGenerator.SettingsBinder</AssemblyName>
-        <Version>0.0.2</Version>
+        <Version>0.0.3</Version>
         <PackageReleaseNotes>
-            0.0.2: bug fix
+            0.0.3: bug fix
             - Fixed missing 'this' keyword on extension method AddConfigurationSources
 
             0.0.1: Initial Testing Version

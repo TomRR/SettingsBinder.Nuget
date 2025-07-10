@@ -117,7 +117,7 @@ public class Generator : IIncrementalGenerator
 
           public static class SettingsBinderExtensions
           {
-              public static IConfigurationBuilder AddConfigurationSources(IConfigurationBuilder builder)
+              public static IConfigurationBuilder AddConfigurationSources(this IConfigurationBuilder builder)
               {
                   builder
                     .SetBasePath(Directory.GetCurrentDirectory())

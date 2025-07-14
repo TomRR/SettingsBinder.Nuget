@@ -7,10 +7,12 @@ A lightweight, zero-boilerplate Roslyn Source Generator that binds `[Settings]`-
 ## ✨ Features
 
 - ✅ Automatic binding of settings from `appsettings.json`
-- ✅ Strongly-typed configuration via `[Settings]` attribute
+- ✅ Strongly-typed settings via `[Settings]` attribute
 - ✅ Supports `IOptions<T>`, validation, and DI
 - ✅ Source-generated `SectionName` and registration logic
+- ✅ Modular and customizable configuration pipelines
 - ✅ Zero reflection, minimal runtime overhead
+- ✅ XML Documentation
 
 ---
 
@@ -28,17 +30,14 @@ dotnet add package TomRR.SourceGenerator.SettingsBinder
 using TomRR.SourceGenerator.SettingsBinder;
 
 [Settings]
-public sealed partial class LoggingSettings : ISettings
+public sealed partial class LoggingSettings
 {
-    public static string SectionName => "LoggingSettings";
-
     public string? Level { get; init; }
     public string? Format { get; init; }
 }
-
 ```
 
-### 3. Add to appsettings.json
+### 3. Configure to appsettings.json
 ```json
 {
   "LoggingSettings": {
@@ -48,19 +47,32 @@ public sealed partial class LoggingSettings : ISettings
 }
 ```
 
-### 4. Register with DI in Program.cs
+### 4. Wire Up in Program.cs
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
 
-// Add base configuration files
-builder.Configuration.AddConfigurationSources();
+// ✅ Default configuration sources
+builder.Configuration.AddDefaultConfigurationSources<Program>();
 
-// Automatically registers all [Settings] classes
+// ✅ Registers all [Settings] classes automatically
 builder.AddSettingsOptions();
 
 var app = builder.Build();
-```
 
+```
+✅ You're done!
+
+ ## 🧩 Advanced Configuration Pipeline
+If you prefer fine-grained control over configuration sources:
+```csharp
+builder.Configuration
+    .WithBasePath()
+    .WithJsonFile()
+    .WithEnvironmentJsonFile()
+    .WithSecrets<Program>()
+    .WithEnvironmentVariables();
+```
+You can mix & match based on your project needs.
 
 ## ✅ What Gets Generated?
 
@@ -72,7 +84,7 @@ public interface ISettings
 }
 ```
 
-### ✅ Partial Class Implementation
+### ✅ Partial Class Implementation with SectionName
 ```csharp
 public sealed partial class LoggingSettings : ISettings
 {
@@ -80,7 +92,18 @@ public sealed partial class LoggingSettings : ISettings
 }
 ```
 
-### ✅ Binding Extension
+### ✅ Default Configuration Sourcing
+```csharp
+public static IConfigurationBuilder AddDefaultConfigurationSources<T>(this IConfigurationBuilder builder) where T : class 
+    => builder
+        .SetBasePath(Directory.GetCurrentDirectory())
+        .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+        .AddJsonFile("appsettings.Development.json", optional: true, reloadOnChange: true)
+        .AddUserSecrets<T>()
+        .AddEnvironmentVariables();
+```
+
+### ✅ Automatic Binding with Validation
 ```csharp
 builder.Services
     .AddOptions<LoggingSettings>()
@@ -88,16 +111,19 @@ builder.Services
     .ValidateDataAnnotations()
     .ValidateOnStart();
 ```
-## 🧩 Customize Section Names
+
+## 🎛️ Customize Section Names
 You can explicitly override the section name using the attribute:
+
 ```csharp
 [Settings("MyCustomSection")]
-public sealed partial class AdvancedSettings : ISettings
+public sealed partial class AdvancedSettings
 {
     public string? Mode { get; init; }
     public bool Enabled { get; init; }
 }
 ```
+
 This generates:
 ```csharp
 public sealed partial class AdvancedSettings : ISettings
@@ -105,6 +131,7 @@ public sealed partial class AdvancedSettings : ISettings
     public static string SectionName => "MyCustomSection";
 }
 ```
+
 ```csharp
 {
   "MyCustomSection": {
@@ -113,26 +140,30 @@ public sealed partial class AdvancedSettings : ISettings
   }
 }
 ```
+
 🧠 Use this when the config section does not match the class name.
 
-## ➕ Adding More Settings
-Just define more [Settings]-annotated classes:
-```csharp
-[Settings]
-public sealed partial class ApiKeySettings : ISettings
-{
-    public string Key { get; init; } = default!;
-}
-```
-All [Settings] classes are automatically picked up and registered.
+## 🏆 Performance
+SettingsBinder:
+- ✅ Zero reflection at runtime (everything is compile-time generated).
+- ✅ No ActivatorUtilities, no extra runtime DI overhead.
+- ✅ Source generation ensures optimal performance with minimal allocations.
+
+[//]: # (ToDo:)
+[//]: # (📊 Benchmarks )
+[//]: # (
+[//]: # (Performance comparisons vs manual IOptions<T> or reflection-based solutions.)
+
 
 ## 📦 Package Info
 | Name       | Description                                             |
-| ---------- | ------------------------------------------------------- |
+|------------|---------------------------------------------------------|
 | Package ID | `TomRR.SourceGenerator.SettingsBinder`                  |
 | License    | Apache 2.0                                              |
 | Author     | Tom-Robert Resing                                       |
 | Repo       | [GitHub](https://github.com/TomRR/SettingsBinder.Nuget) |
+| Nuget      | [Nuget](https://www.nuget.org/packages/TomRR.SourceGenerator.SettingsBinder/)  |
+
 
 ## 📄 License
 

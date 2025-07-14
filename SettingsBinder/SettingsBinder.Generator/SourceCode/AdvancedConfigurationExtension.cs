@@ -1,6 +1,4 @@
-using System.IO;
-
-namespace TomRR.SourceGenerator.SettingsBinder;
+namespace TomRR.SourceGenerator.SettingsBinder.SourceCode;
 
 public static class AdvancedConfigurationExtension
 {

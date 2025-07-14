@@ -5,13 +5,13 @@
         <IsPackable>true</IsPackable>
         <Nullable>enable</Nullable>
         <LangVersion>12</LangVersion>
-
+    
         <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
         <IsRoslynComponent>true</IsRoslynComponent>
 
         <RootNamespace>TomRR.SourceGenerator.SettingsBinder</RootNamespace>
         <AssemblyName>TomRR.SourceGenerator.SettingsBinder</AssemblyName>
-        <Version>0.0.3</Version>
+        <Version>0.0.4</Version>
         <PackageReleaseNotes>
             0.0.4:
             - Added `AddUserSecrets&lt;T&gt;()` to the default configuration method

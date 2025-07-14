@@ -1,7 +1,6 @@
 using SettingBinder.SampleApi;
 using TomRR.SourceGenerator.SettingsBinder;
 using TomRR.SourceGenerator.SettingsBinder.Advanced;
-using TomRR.SourceGenerator.SettingsBinder.Default;
 
 var builder = WebApplication.CreateBuilder(args);
 

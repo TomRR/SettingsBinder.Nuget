@@ -1,9 +1,18 @@
+using SettingBinder.SampleApi;
+using TomRR.SourceGenerator.SettingsBinder;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// // Add base configuration files
+builder.Configuration.AddDefaultConfigurationSources();
+builder.Configuration.WithBasePath().WithJsonFile().WithDevJsonFile().WithSecrets<IAssemblyMarker>();
+// Automatically registers all [Settings] classes
+builder.AddSettingsOptions();
 
 var app = builder.Build();
 

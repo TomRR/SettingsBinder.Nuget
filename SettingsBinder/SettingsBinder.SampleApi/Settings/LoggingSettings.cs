@@ -1,8 +1,9 @@
+using TomRR.SourceGenerator.SettingsBinder;
 
 namespace SettingBinder.SampleApi.Settings;
 
-// [Settings]
-// public partial class LoggingSettings
-// {
-//     public string? Name { get; set; }
-// }
+[Settings]
+public partial class LoggingSettings
+{
+    public string? Name { get; set; }
+}

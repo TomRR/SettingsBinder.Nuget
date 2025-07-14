@@ -1,5 +1,7 @@
 using SettingBinder.SampleApi;
 using TomRR.SourceGenerator.SettingsBinder;
+using TomRR.SourceGenerator.SettingsBinder.Advanced;
+using TomRR.SourceGenerator.SettingsBinder.Default;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,8 +11,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 // // Add base configuration files
-builder.Configuration.AddDefaultConfigurationSources();
-builder.Configuration.WithBasePath().WithJsonFile().WithDevJsonFile().WithSecrets<IAssemblyMarker>();
+builder.Configuration.AddDefaultConfigurationSources<IAssemblyMarker>();
+builder.Configuration.WithBasePath().WithJsonFile().WithEnvironmentJsonFile().WithSecrets<IAssemblyMarker>();
 // Automatically registers all [Settings] classes
 builder.AddSettingsOptions();
 

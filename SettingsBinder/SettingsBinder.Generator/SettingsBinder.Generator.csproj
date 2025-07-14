@@ -13,6 +13,12 @@
         <AssemblyName>TomRR.SourceGenerator.SettingsBinder</AssemblyName>
         <Version>0.0.3</Version>
         <PackageReleaseNotes>
+            0.0.4:
+            - Added `AddUserSecrets&lt;T&gt;()` to the default configuration method
+            - Introduced advanced modular configuration methods for fine-grained setup
+            - Updated file naming and namespace structure for extensions (breaking change)
+            - Improved XML documentation comments for all generated extension methods
+            
             0.0.3: bug fix
             - Fixed missing 'this' keyword on extension method AddConfigurationSources
 
